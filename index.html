@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" alt="Logo" class="logo">
+
+                <ul id="sidemenu">
+
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Data Science</p>
+                <h1>Hi, I'm <span>Chitransh</span><br>Shrivastava from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------- ABOUT -------------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="User">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Ambitious and detail-oriented software developer with a strong
+                    foundation in Python, GUI development (Tkinter), and database management
+                    (MySQL). Proficient in web technologies including HTML, CSS, and JavaScript 
+                    with a growing expertise in JQuery. Experienced in software implementation,
+                    troubleshooting, and customer interaction. Passionate about automation and 
+                    data analysis with excellent problem-solving skills and strong communication 
+                    abilities.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Science</span><br>Analyze Data and make better decisions</li>
+                            <li><span>Python</span><br>Analyze Data and Extract insights, Data Visualization Utilizing libraries like NumPy, Pandas and Django.<br>Machine Learning, Task Automation</li>
+                            <li><span>SQL</span><br>Store, Retrive, Updating, Deleting, Searching and Manipualte Data in relational databases. Optimizing Database Performance<br>and Defining Database Schema</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Mar 2024 - Sep 2024</span><br>Software Developer and Team Lead at Vardhman Sfotech</li>
+                            <li><span>May 2023 - June 2023</span><br>C++ & Data Structures at JobSense</li>
+                            <li><span>May 2022 - June 2022</span><br>Web Development and Web Design at JobSense</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Oct 2021 - June 2025</span><br>Bechlors of Technology in Computer Science and Engineering at Mahakal Institute of Technology(M.I.T)</li>
+                            <li><span>Mar 2020 - May 2021</span><br>PCM Stream XII Standard at St Leela Shah Convent H.S School</li>
+                            <li><span>Apr 2018 - June 2019</span><br>All Subject X Standard at St Leela Shah Convent High School</li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------------- SERVICES ----------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Data Science</h2>
+                    <p>Provided a wide range of services including Data collection, cleaning, analysis, Visualization, predictivem, modeling, Machine Learning, Statistical analysis, data pipline, development, nutural language processing and many more.</p>
+                    <a href="https://www.ibm.com/think/topics/data-science">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>Web Development, Data Analysis, machine learning, scripting, game development, desktop application development, API development, DevOps, testing, debugging, chatbot development, and IoT development.</p>
+                    <a href="https://www.python.org/">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Sql</h2>
+                    <p>Data manipulation, querying, definition((DDL), Data Manipulation Language (DML), Data Query Language (DQL), and Data Control Language (DCL)), ETL Process(Extract, transform and Load) and control within a database</p>
+                    <a href="https://www.w3schools.com/sql/">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------------------------------- PORTFOLIO ------------------------------------------>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/recog.jpg">
+
+                    <div class="layer">
+                        <h3>Face Recognition</h3>
+                        <p>Developed a face detection system using OpenCV and Python, incorporating advanced image processing techniques to achieve 95%
+                        accuracy in real-time applications.Integrated the system with external APIs for real-time facial recognition in surveillance environments</p>
+                        <a href="https://github.com/Chitransh-1/Face-Detection"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/whatsapp.jpg">
+
+                    <div class="layer">
+                        <h3>Whatsapp Web</h3>
+                        <p>Designed and developed a Python-based bulk messaging tool for businesses to enhance customer outreach.
+                        Utilized Tkinter for GUI, SQL for data storage, and datetime module for scheduling, improving message delivery efficiency by 40%</p>
+                        <a href="https://github.com/Chitransh-1/Whatsapp_Web"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/login.jpg">
+
+                    <div class="layer">
+                        <h3>Login and Registration</h3>
+                        <p>Built a robust user authentication system using PHP, HTML, and CSS, enabling secure registration, login, and profile management.
+                        Focused on clean code and user-friendly interfaces to ensure scalability and maintainability.</p>
+                        <a href="https://github.com/Chitransh-1/Login-or-Registration-Page"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+
+        </div>
+    </div>
+
+
+
+    <!-- ----------------------------------------------------CONTACT -------------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+
+                    <h1 class="sub-title">Contact ME</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> chitranshshrivastava102@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7879294846</p>
+
+                    <div class="social-icons">
+
+                        <a href="https://www.facebook.com/Cshrivastava.1"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/chitranshh.1/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/chitranshh1/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Chitransh-1"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.reddit.com/user/Chitranshh1/"><i class="fa-brands fa-reddit"></i></a>
+                        <a href="https://x.com/chitranshhh1"><i class="fa-brands fa-x-twitter"></i></a>
+                    
+                    </div>
+
+                    <a href="images/Chitransh-Resume.pdf" download class="btn btn-1">Download CV</a>
+
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <SPAn id="msg"></SPAn>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 Chitransh Shirvastava with <i class="fa-solid fa-heart"></i>. All rights reserved</p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";   
+    }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyORQyk0Pe4A3mSz78M0RmNRnrQCZWo0ETNsrMw7z4_Cy8rYLyPDTNgjj0bxV8VDEdG/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
